@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02C76DFD-F5AA-4E57-A7F5-145C54D75D19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Student_Management_System</RootNamespace>
+    <AssemblyName>Student_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Course_Details.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Course_Details.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Add_Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Add_Course.Designer.cs">
+      <DependentUpon>Frm_Add_Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Add_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Add_Teacher.Designer.cs">
+      <DependentUpon>Frm_Add_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Courses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Courses.Designer.cs">
+      <DependentUpon>Frm_Courses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login_Form.Designer.cs">
+      <DependentUpon>Frm_Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_New_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_New_Student.Designer.cs">
+      <DependentUpon>Frm_New_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Search_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Search_Student.Designer.cs">
+      <DependentUpon>Frm_Search_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Student_Fees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Student_Fees.Designer.cs">
+      <DependentUpon>Frm_Student_Fees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Teacher.Designer.cs">
+      <DependentUpon>Frm_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI_Coaching_Classes_Software.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_Coaching_Classes_Software.Designer.cs">
+      <DependentUpon>MDI_Coaching_Classes_Software.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Teacher_Details.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Teacher_Details.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frm_Add_Course.resx">
+      <DependentUpon>Frm_Add_Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Add_Teacher.resx">
+      <DependentUpon>Frm_Add_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Courses.resx">
+      <DependentUpon>Frm_Courses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login_Form.resx">
+      <DependentUpon>Frm_Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_New_Student.resx">
+      <DependentUpon>Frm_New_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Search_Student.resx">
+      <DependentUpon>Frm_Search_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Student_Fees.resx">
+      <DependentUpon>Frm_Student_Fees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Teacher.resx">
+      <DependentUpon>Frm_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_Coaching_Classes_Software.resx">
+      <DependentUpon>MDI_Coaching_Classes_Software.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Course_Details.xsc">
+      <DependentUpon>Course_Details.xsd</DependentUpon>
+    </None>
+    <None Include="Course_Details.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Course_Details.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Course_Details.xss">
+      <DependentUpon>Course_Details.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Teacher_Details.xsc">
+      <DependentUpon>Teacher_Details.xsd</DependentUpon>
+    </None>
+    <None Include="Teacher_Details.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Teacher_Details.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teacher_Details.xss">
+      <DependentUpon>Teacher_Details.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
